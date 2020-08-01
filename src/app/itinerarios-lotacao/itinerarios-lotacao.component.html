@@ -1,0 +1,29 @@
+<div class="titulo">
+  <span *ngIf="itinerarios">
+    Itinerários para linha de Lotação {{itinerarios.codigo}} | {{itinerarios.nome}}
+  </span>
+</div>
+
+<div class="container-table">
+
+  <table datatable [dtOptions]="dtOptions" class="row-border hover" *ngIf="itinerarios">
+      <thead>
+        <tr>        
+          <th>Parada</th>
+          <th>Mapa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of itinerarios | keyvalue">
+          <td>{{item.key}}</td>        
+          <td><a href="https://www.google.com/maps/?q={{item.value.lat}},{{item.value.lng}}" target="_blank">Ver no mapa</a></td>
+        </tr>      
+      </tbody>
+  </table>    
+
+  <div class="nova-consulta">
+    <button routerLink="/pagina-inicial" class="btn btn-info button-nova-consulta" (click)="setDocTitle( 'Consulta Transportes' )">Nova Consulta</button>
+    <button routerLink="/lista-linhas-lotacao" class="btn btn-info" (click)="setDocTitle( 'Linhas Lotação' )">Voltar</button>
+  </div>  
+
+</div>

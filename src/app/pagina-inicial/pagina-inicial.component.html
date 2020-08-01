@@ -1,0 +1,15 @@
+<div class="jumbotron menu">
+    <h3>Consulta Linhas de Ônibus e Lotação Porto Alegre - RS</h3>
+    <br>
+    <p class="lead">
+        Utilize os botões abaixo para visualizar Linhas de Ônibus e Lotação e também seus Itinerários.
+    </p>
+    <br>
+    <div class="buttons">    
+        <button  type="button" class="btn btn-info btn-lg" routerLink="/lista-linhas-onibus" (click)="setDocTitle( 'Linhas de Ônibus' )">Listar linhas de ônibus    <i class="fas fa-bus-alt"></i></button>
+        <br><br>
+        <button type="button" class="btn btn-info btn-lg button-lotacao" routerLink="/lista-linhas-lotacao" (click)="setDocTitle( 'Linhas de Lotação' )">Listar linhas de lotação    <i class="fas fa-bus-alt"></i></button>
+    </div>
+
+</div>
+

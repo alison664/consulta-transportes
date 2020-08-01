@@ -1,0 +1,30 @@
+<div class="titulo">
+  <span class="linhas-poa">LINHAS DE ÔNIBUS PORTO ALEGRE - RS</span>
+</div>
+
+
+<div class="container-table"> 
+
+  <table datatable class="row-border hover" *ngIf="linhasOnibus" datatable="ng">
+      <thead>
+        <tr>          
+          <th>Código</th>
+          <th>Nome</th>
+          <th>Itinerários</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let linha of linhasOnibus">          
+          <td>{{linha.codigo}}</td>
+          <td>{{linha.nome}}</td>
+          <td><a [routerLink]="['/itinerarios', linha.id]" (click)="setDocTitle( 'Itinerário linha ônibus' )">Ver Itinerários</a></td>
+        </tr>      
+      </tbody>
+  </table>
+  
+  <div class="nova-consulta">
+    <button routerLink="/pagina-inicial" class="btn btn-info" (click)="setDocTitle( 'Consulta Transportes' )">Nova Consulta</button>
+  </div>  
+    
+</div>
+ 

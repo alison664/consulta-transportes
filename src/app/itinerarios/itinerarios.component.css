@@ -1,0 +1,41 @@
+.container-table {    
+    text-align: center;
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;    
+    padding-top: 50px;
+    top: 20px;
+}
+
+table {
+    width: 900px;
+    height: 500px;    
+}
+
+a {
+    text-decoration: none;
+    color: #2F6CC7;
+}
+
+a:hover {
+    color: #2f97c7;
+    text-decoration: none;
+}
+
+.container-table .nova-consulta {
+    margin-top: 30px;    
+}
+
+.container-table .nova-consulta .button-nova-consulta {
+    margin-right: 20px;
+}
+
+.titulo {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;    
+}
+
+button {
+    width: 150px;
+}
