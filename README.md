@@ -22,5 +22,5 @@ Isso fará a aplicação ser executada no endereço `http://localhost:4200/`
 
 Para fazer a build e executar uma imagem, execute os seguintes comandos:
 
-`docker build -t consulta-transportes`
-`docker run -p 8081:80 consulta-transportes`
+`docker build -t consulta-transportes
+ docker run -p 8081:80 consulta-transportes`
